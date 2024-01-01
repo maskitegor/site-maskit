@@ -150,19 +150,31 @@ h1 {
 }
 
 @media (max-width: 980px) {
-	.person, .bolt {
+	.person, .bolt, .lightnings {
 		display: none;
 	}
 	.content {
 		min-width: 400px;
 		min-height: 500px;
 		margin: 20px auto;
+		gap: 0;
 	}
+	.content__text {
+		margin-bottom: 20px;
+	}
+
 	h1 {
 		font-size: 30px;
 	}
+	.buttons {
+		gap: 20px;
+	}
+
 	.buttons button {
 		width: 50%;
+		margin-top: 20px;
 	}
-	
+	.buttons a {
+		text-align: center;
+	}
 }
