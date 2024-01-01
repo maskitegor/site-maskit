@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+	background-color: rgba(0, 0, 0, 0)
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	background-color: black;
+	color: #fff;
+	overflow: hidden;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+a:visited {
+ 	color: black;
+ }
+
+ .header h2 a:visited {
+	color: #ffe250;
+ }
+
+.header {
+	margin: 50px 0 0 100px;
+}
+
+.header a {
+	color: #ffe250;
+	font-size: 28px;
+}
+
+.content {
+	max-width: 600px;
+	max-height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 35px;
+	margin-left: 200px;
+	margin-top: 55px;
+}
+
+h1 {
+	font-weight: 500;
+    font-size: 60px;
+	text-align: center;
+}
+
+.wrapper_content__text {
+	margin-top: 33px;
+}
+
+.content__text {
+	font-weight: 400;
+    font-style: normal;
+    font-size: 1.8518518519vh;
+    line-height: 2.7777777778vh;
+    min-height: 11.6666666667vh;
+	text-align: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	margin-top: 50px;
+}
+
+.buttons a {
+	width: 100%;
+}
+
+.buttons button {
+	width: 100%;
+	height: 100px;
+	background-color: #ffe250;
+	cursor: pointer;
+	font-size: 32px;
+	font-weight: 500;
+	border-radius: 10px;
+	border: none;
+	color: black;
+}
+
+.buttons button:hover {
+	box-shadow: 0 0 3.3333333333vh #ffe250;
+	transition: all 0.5s;
+}
+
+.person {
+	position: absolute;
+	width: 56.533333vh;
+    height: 119.464815vh;
+    bottom: -20.962962963vh;
+    right: 3.1481481481vh;
+	z-index: -1;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -4;
+}
+
+.grafitti {
+	position: absolute;
+	z-index: -3;
+	left: -1.4907407407vh;
+    top: -18.4907407407vh;
+    width: 213.9259259259vh;
+    height: 149.7842592593vh;
+}
+
+.bolt {
+	position: absolute;
+	right: 56.9907407407vh;
+    top: .5740740741vh;
+    width: 42.9796296296vh;
+    height: 78.8768518519vh;
+    filter: drop-shadow(0 0 30px #f9dc4f);
+    transform: rotate(150deg);
+	z-index: -2;
+}
+
+.lightnings {
+	left: -14.6481481481vh;
+    top: -8.7962962963vh;
+    width: 201.4398148148vh;
+    height: 115.137037037vh;
+	position: absolute;
+	z-index: -2;
+}
+
+@media (max-width: 980px) {
+	.person, .bolt {
+		display: none;
+	}
+	.content {
+		min-width: 400px;
+		min-height: 500px;
+		margin: 20px auto;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	.buttons button {
+		width: 50%;
+	}
+	
+}
