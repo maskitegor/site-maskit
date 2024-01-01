@@ -23,7 +23,6 @@ body {
 
 a {
 	text-decoration: none;
-	
 }
 
 a:visited {
@@ -150,6 +149,10 @@ h1 {
 }
 
 @media (max-width: 980px) {
+	body {
+		overflow: hidden;
+	}
+
 	.person, .bolt, .lightnings {
 		display: none;
 	}
