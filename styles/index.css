@@ -185,15 +185,12 @@ h1 {
 	.buttons {
 		gap: 10px;
 	}
-	.buttons button {
-		width: 50%;
-	}
 	.buttons a {
 		text-align: center;
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
 	.person, .bolt, .lightnings {
 		display: none;
 	}
@@ -217,10 +214,7 @@ h1 {
 	.buttons {
 		gap: 15px;
 		margin-top: 25px;
-	}
-
-	.buttons button {
-		width: 50%;
+		flex-direction: row;
 	}
 	.buttons a {
 		text-align: center;
