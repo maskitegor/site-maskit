@@ -184,6 +184,7 @@ h1 {
 	}
 	.buttons {
 		gap: 10px;
+		flex-direction: row;
 	}
 	.buttons a {
 		text-align: center;
